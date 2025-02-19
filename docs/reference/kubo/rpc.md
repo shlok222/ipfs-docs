@@ -152,7 +152,7 @@ Status codes used at the RPC layer are simple:
 - `404` - RPC endpoint doesn't exist
 - `405` - HTTP Method Not Allowed
 
-Status code `500` means that the function _does_ exist, but IPFS was not able to fulfil the request because of an error. To know that reason, you have to look at the error message that is usually returned with the body of the response (if no error, check the daemon logs).
+Status code `500` means that the function _does_ exist, but IPFS was not able to fulfill the request because of an error. To know that reason, you have to look at the error message that is usually returned with the body of the response (if no error, check the daemon logs).
 
 Streaming endpoints fail as above, unless they have started streaming. That means they will have sent a `200` status code already. If an error happens during the stream, it will be included in a Trailer response header (some endpoints may additionally include an error in the last streamed object).
 
@@ -1331,7 +1331,7 @@ Collect a performance profile for debugging.
 ### Arguments
 
 - `output` [string]: The path where the output .zip should be stored. Default: ./ipfs-profile-[timestamp].zip. Required: no.
-- `collectors` [array]: The list of collectors to use for collecting diagnostic data. Default: [goroutines-stack goroutines-pprof version heap allocs bin cpu mutex block trace]. Default: `[goroutines-stack goroutines-pprof version heap allocs bin cpu mutex block trace]`. Required: no.
+- `collectors` [array]: The list of collectors to use for collecting diagnostic data. Default: [goroutines-stack goroutines-pprof version heap allocs bin cpu mutex block trace]. Default: `[goroutines-stack goroutines-pprof version heap allows bin cpu mutex block trace]`. Required: no.
 - `profile-time` [string]: The amount of time spent profiling. If this is set to 0, then sampling profiles are skipped. Default: `30s`. Required: no.
 - `mutex-profile-fraction` [int]: The fraction 1/n of mutex contention events that are reported in the mutex profile. Default: `4`. Required: no.
 - `block-profile-rate` [string]: The duration to wait between sampling goroutine-blocking events for the blocking profile. Default: `1ms`. Required: no.
@@ -1601,7 +1601,7 @@ Display file status.
 
 ### Arguments
 
-- `arg` [string]: Path to node to stat. Required: **yes**.
+- `arg` [string]: Path to node to start. Required: **yes**.
 - `format` [string]: Print statistics in given format. Allowed tokens: &lt;hash&gt; &lt;size&gt; &lt;cumulsize&gt; &lt;type&gt; &lt;childs&gt; and optional &lt;mode&gt; &lt;mode-octal&gt; &lt;mtime&gt; &lt;mtime-secs&gt; &lt;mtime-nsecs&gt;.Conflicts with other format options. Default: &lt;hash&gt;
 Size: &lt;size&gt;
 CumulativeSize: &lt;cumulsize&gt;
@@ -1889,7 +1889,7 @@ On success, the call to this endpoint will return with 200 and the following bod
 
 ## /api/v0/key/import
 
-Import a key and prints imported key id
+Import a key and print imported key id
 
 ### Arguments
 
