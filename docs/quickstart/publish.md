@@ -12,7 +12,7 @@ Some steps of this guide are currently outdated due to [changes with web3.storag
 In this quickstart guide, you will learn about [pinning services](../concepts/persistence.md#pinning-in-context) and how to use them to publish content-addressed data with IPFS. To learn the process, you will upload the file to a pinning service called [web3.storage](https://web3.storage/). By the end of this guide, you should have a better understanding of how content addressing and CIDs work from a high level.
 
 :::callout
-The web3.storage pinning service was chosen purely for demonstration purposes, and is one of many [pinning services](../concepts/persistence.md#pinning-in-context) you can choose from. While each pinning services has different SDKs and APIs, their fundamental role is the same - to store files and make them available to the IPFS network. In fact, one of the main benefits of IPFS is that files can be pinned to multiple pinning services, thereby reducing vendor lock-in.
+The web3.storage pinning service was chosen purely for demonstration purposes, and is one of many [pinning services](../concepts/persistence.md#pinning-in-context) you can choose from. While each pinning service has different SDKs and APIs, their fundamental role is the same - to store files and make them available to the IPFS network. In fact, one of the main benefits of IPFS is that files can be pinned to multiple pinning services, thereby reducing vendor lock-in.
 :::
 
 ## Contents <!-- omit from toc -->
@@ -56,7 +56,7 @@ Data pinned to the IPFS network is public by default and retrievable by anyone. 
 
    ![web3.storage upload button](./images/web3-upload-button.png)
 
-1. Upload and pin the file by doing either dragging the [image file](../quickstart/images/welcome-to-IPFS.jpg) to the dashed rectangle labeled **Drag and drop your files here**, or clicking on the dashed rectangle to select the [image](../quickstart/images/welcome-to-IPFS.jpg) file.
+1. Upload and pin the file by either dragging the [image file](../quickstart/images/welcome-to-IPFS.jpg) to the dashed rectangle labeled **Drag and drop your files here**, or clicking on the dashed rectangle to select the [image](../quickstart/images/welcome-to-IPFS.jpg) file.
 
    ![web3.storage upload tab](./images/web3-upload-tab.png)
 
