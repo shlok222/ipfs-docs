@@ -72,9 +72,9 @@ IPLD provides IPFS with the following benefits:
 Want to learn more about IPLD? See [the official docs](https://ipld.io/docs/intro/primer/).
 :::
 
-### Content Addressable aRchive (CAR) files
+### Content Addressable archive (CAR) files
 
-IPFS uses Content Addressable aRchive (CAR) files to store and transfer a serialized archive of IPLD content-addressed data. CAR files are similar to TAR files, in that they that are designed for storing collections of content addressed data.
+IPFS uses Content Addressable archive (CAR) files to store and transfer a serialized archive of IPLD content-addressed data. CAR files are similar to TAR files, in that they that are designed for storing collections of content addressed data.
 
 ## How content routing works in IPFS
 
