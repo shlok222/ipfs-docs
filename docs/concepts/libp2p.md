@@ -33,7 +33,7 @@ Discovering and connecting with other peers is a key challenge in P2P networking
 - Restrictive licensing.
 - Outdated code.
 - No point of contact.
-- Being closed source, deprecated, or lacked specifications.
+- Being closed source, deprecated, or lacking specifications.
 - Unfriendly APIs.
 - Tight coupling with specific use cases.
 - Lack of upgradeability.
