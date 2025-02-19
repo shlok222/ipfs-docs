@@ -47,7 +47,7 @@ IPFS [Gateway Checker](https://ipfs.github.io/public-gateway-checker/) provides 
 
 ## DAG builder visualiser
 
-[DAG builder visualiser](https://dag.ipfs.tech/) allows you to upload a CAR file and visualize it as a DAG. You can toggle parameters that determine how the DAG will be visualized, such as typ (Balanced, Trickle, Flat) and max amount of children.
+[DAG builder visualiser](https://dag.ipfs.tech/) allows you to upload a CAR file and visualize it as a DAG. You can toggle parameters that determine how the DAG will be visualized, such as type (Balanced, Trickle, Flat) and max amount of children.
 
 ## CAR Builder
 
