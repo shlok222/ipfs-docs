@@ -58,7 +58,7 @@ For more info and the latest data, see [https://probelab.io/ipfskpi/#dht-lookup-
 [IPNI](ipni.md) utilization is measured by calculating the number of requests made per day to the network indexers operated by [cid.contact](https://cid.contact/). For more info and the latest data, see [https://probelab.io/ipfskpi/#ipni-utilization](https://probelab.io/ipfskpi/#ipni-utilization).
 
 ## Tools
-The ProbeLab team is developing tools to continuously monitor the performance of several critical parts of the IPFS network. The current set of tools, together with detailed description and links can be found at: [https://probelab.io/tools/](https://probelab.io/tools/).
+The ProbeLab team is developing tools to continuously monitor the performance of several critical parts of the IPFS network. The current set of tools, together with detailed descriptions and links can be found at: [https://probelab.io/tools/](https://probelab.io/tools/).
 ### Nebula 
 
 [Nebula](https://github.com/dennis-tra/nebula) is a libp2p DHT crawler that is used to calculate [DHT server availability](#dht-server-availability). It periodically tries to connect to DHT Server peers within the IPFS DHT. Upon discovering a new peer, the crawler notes the beginning of an availability session, extending this session with each successful connection attempt. Conversely, a failed connection ends the session, with a subsequent successful attempt initiating a new one. During each measurement period, peers may experience multiple availability sessions. Learn more about Nebula at [probelab.io/tools/nebula/](https://probelab.io/tools/nebula/).
